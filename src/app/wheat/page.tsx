@@ -57,7 +57,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Best Seller</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-18%</span><img class="product-photo" src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=500&h=500&fit=crop&q=80" alt="Whole Wheat Flour" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Wheat+Flour';"></div>
+              <div class="product-img"><span class="discount-tag">-18%</span><img class="product-photo" src="/assets/products/wheat-flour.jpg" alt="Whole Wheat Flour" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Wheat+Flour';"></div>
               <div class="product-info">
                 <span class="product-category">Atta</span>
                 <h3>Whole Wheat Flour 10kg</h3>
@@ -70,7 +70,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge hot">Hot</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-19%</span><img class="product-photo" src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500&h=500&fit=crop&q=80" alt="Sharbati Wheat" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Sharbati';"></div>
+              <div class="product-img"><span class="discount-tag">-19%</span><img class="product-photo" src="/assets/products/sharbati-wheat.jpg" alt="Sharbati Wheat" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Sharbati';"></div>
               <div class="product-info">
                 <span class="product-category">Premium Wheat</span>
                 <h3>Sharbati Wheat 5kg</h3>
@@ -83,7 +83,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Top Pick</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-20%</span><img class="product-photo" src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500&h=500&fit=crop&q=80" alt="Multigrain Atta" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Multigrain';"></div>
+              <div class="product-img"><span class="discount-tag">-20%</span><img class="product-photo" src="/assets/products/multigrain-atta.jpg" alt="Multigrain Atta" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Multigrain';"></div>
               <div class="product-info">
                 <span class="product-category">Atta</span>
                 <h3>Multigrain Atta 5kg</h3>
@@ -96,7 +96,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge new">New</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-25%</span><img class="product-photo" src="https://images.unsplash.com/photo-1612257999691-c6e7e7d34f43?w=500&h=500&fit=crop&q=80" alt="Wheat Daliya" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Daliya';"></div>
+              <div class="product-img"><span class="discount-tag">-25%</span><img class="product-photo" src="/assets/products/wheat-daliya.jpg" alt="Wheat Daliya" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Daliya';"></div>
               <div class="product-info">
                 <span class="product-category">Broken Wheat</span>
                 <h3>Wheat Daliya 1kg</h3>
@@ -109,7 +109,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Limited</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-23%</span><img class="product-photo" src="https://images.unsplash.com/photo-1612257999691-c6e7e7d34f43?w=500&h=500&fit=crop&q=80" alt="Suji" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Suji';"></div>
+              <div class="product-img"><span class="discount-tag">-23%</span><img class="product-photo" src="/assets/products/suji.jpg" alt="Suji" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Suji';"></div>
               <div class="product-info">
                 <span class="product-category">Wheat Products</span>
                 <h3>Suji Semolina 1kg</h3>
@@ -122,7 +122,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Best Seller</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-25%</span><img class="product-photo" src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=500&h=500&fit=crop&q=80" alt="Maida" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Maida';"></div>
+              <div class="product-img"><span class="discount-tag">-25%</span><img class="product-photo" src="/assets/products/maida.jpg" alt="Maida" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Maida';"></div>
               <div class="product-info">
                 <span class="product-category">Wheat Products</span>
                 <h3>Maida All Purpose 1kg</h3>

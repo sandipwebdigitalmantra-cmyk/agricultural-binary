@@ -954,8 +954,31 @@ function initPage(): () => void {
     menuToggle?.setAttribute("aria-expanded", "false");
   });
 
+  document
+    .querySelectorAll<HTMLAnchorElement>(".nav-list .has-dropdown > a")
+    .forEach((link) => {
+      bind(link, "click", (event: MouseEvent) => {
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        if (!isMobile) return;
+        event.preventDefault();
+        const parent = link.parentElement;
+        if (!parent) return;
+        const wasOpen = parent.classList.contains("is-open");
+        document
+          .querySelectorAll<HTMLElement>(".nav-list .has-dropdown.is-open")
+          .forEach((el) => {
+            if (el !== parent) el.classList.remove("is-open");
+          });
+        parent.classList.toggle("is-open", !wasOpen);
+      });
+    });
+
   document.querySelectorAll<HTMLElement>(".nav-list a").forEach((link) => {
     bind(link, "click", () => {
+      if (link.closest(".has-dropdown") && !link.closest(".dropdown-menu")) {
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        if (isMobile) return;
+      }
       mainNav?.classList.remove("open");
       menuToggle?.setAttribute("aria-expanded", "false");
     });

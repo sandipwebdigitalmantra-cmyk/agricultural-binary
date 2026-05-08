@@ -59,7 +59,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Best Seller</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-25%</span><img class="product-photo" src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&h=500&fit=crop&q=80" alt="Basmati Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Basmati';"></div>
+              <div class="product-img"><span class="discount-tag">-25%</span><img class="product-photo" src="/assets/products/basmati-rice.jpg" alt="Basmati Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Basmati';"></div>
               <div class="product-info">
                 <span class="product-category">Long Grain</span>
                 <h3>Basmati Rice 5kg</h3>
@@ -72,7 +72,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge hot">Hot</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-18%</span><img class="product-photo" src="https://images.unsplash.com/photo-1586201375800-744e6e9f4ec0?w=500&h=500&fit=crop&q=80" alt="Sona Masoori" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Sona+Masoori';"></div>
+              <div class="product-img"><span class="discount-tag">-18%</span><img class="product-photo" src="/assets/products/sona-masoori.jpg" alt="Sona Masoori" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Sona+Masoori';"></div>
               <div class="product-info">
                 <span class="product-category">Medium Grain</span>
                 <h3>Sona Masoori 5kg</h3>
@@ -85,7 +85,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Top Pick</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-20%</span><img class="product-photo" src="https://images.unsplash.com/photo-1599909533730-a6a4c5b40e94?w=500&h=500&fit=crop&q=80" alt="Brown Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Brown+Rice';"></div>
+              <div class="product-img"><span class="discount-tag">-20%</span><img class="product-photo" src="/assets/products/brown-rice.jpg" alt="Brown Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Brown+Rice';"></div>
               <div class="product-info">
                 <span class="product-category">Whole Grain</span>
                 <h3>Brown Rice 1kg</h3>
@@ -98,7 +98,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge new">New</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-21%</span><img class="product-photo" src="https://images.unsplash.com/photo-1602663646108-cf45d3c3c8e7?w=500&h=500&fit=crop&q=80" alt="Jasmine Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Jasmine';"></div>
+              <div class="product-img"><span class="discount-tag">-21%</span><img class="product-photo" src="/assets/products/jasmine-rice.jpg" alt="Jasmine Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Jasmine';"></div>
               <div class="product-info">
                 <span class="product-category">Long Grain</span>
                 <h3>Jasmine Rice 5kg</h3>
@@ -111,7 +111,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Limited</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-21%</span><img class="product-photo" src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500&h=500&fit=crop&q=80" alt="Red Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/d94435/ffffff/png?text=Red+Rice';"></div>
+              <div class="product-img"><span class="discount-tag">-21%</span><img class="product-photo" src="/assets/products/red-rice.jpg" alt="Red Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/d94435/ffffff/png?text=Red+Rice';"></div>
               <div class="product-info">
                 <span class="product-category">Whole Grain</span>
                 <h3>Red Rice 1kg</h3>
@@ -124,7 +124,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Best Seller</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-17%</span><img class="product-photo" src="https://images.unsplash.com/photo-1591299177061-2151e53fcaea?w=500&h=500&fit=crop&q=80" alt="Black Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/3d1e15/ffffff/png?text=Black+Rice';"></div>
+              <div class="product-img"><span class="discount-tag">-17%</span><img class="product-photo" src="/assets/products/black-rice.jpg" alt="Black Rice" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/3d1e15/ffffff/png?text=Black+Rice';"></div>
               <div class="product-info">
                 <span class="product-category">Specialty</span>
                 <h3>Black Rice 500g</h3>

@@ -12,7 +12,7 @@ const html = `
           <span>Privacy Policy</span>
         </nav>
         <h1>Privacy <span>Policy</span></h1>
-        <p>How Negila Sene collects, uses, stores and protects the personal information of customers, Brand Ambassadors and Stock Points.</p>
+        <p>How Negila Sene collects, uses, stores and protects the personal information of customers, Members and Stock Points.</p>
       </div>
     </section>
 
@@ -22,12 +22,12 @@ const html = `
           <p class="legal-effective">Last updated: 7 May 2026</p>
 
           <h2>1. Introduction</h2>
-          <p>Negila Sene ("we", "our", "us") operates a nationwide agricultural e-commerce and Brand Ambassador network. This Privacy Policy describes how we collect, use, store and protect your personal information when you visit our website, register as a Brand Ambassador, place an order, or engage with our Stock Point network. We comply with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023.</p>
+          <p>Negila Sene ("we", "our", "us") operates a nationwide agricultural e-commerce and Member network. This Privacy Policy describes how we collect, use, store and protect your personal information when you visit our website, register as a Member, place an order, or engage with our Stock Point network. We comply with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023.</p>
 
           <h2>2. Information We Collect</h2>
           <p>We collect the following categories of personal information:</p>
           <ul class="legal-doc-list">
-            <li><strong>Identity &amp; contact details</strong> &mdash; name, email, mobile number, postal address, and (for BAs) sponsor and placement information.</li>
+            <li><strong>Identity &amp; contact details</strong> &mdash; name, email, mobile number, postal address, and (for Members) sponsor and placement information.</li>
             <li><strong>Order &amp; transaction data</strong> &mdash; products purchased, prices, payment method, billing/shipping address, GST details (if any).</li>
             <li><strong>Account &amp; activity data</strong> &mdash; login credentials, device/browser, IP address, pages visited, items added to wishlist or cart.</li>
             <li><strong>Communication data</strong> &mdash; messages sent through our contact forms, customer-care queries, and Stock Point chat logs.</li>
@@ -37,9 +37,9 @@ const html = `
           <p>We use your data to:</p>
           <ul class="legal-doc-list">
             <li>Process and fulfil orders, dispatch products from the nearest Stock Point, and confirm delivery.</li>
-            <li>Manage your Brand Ambassador account, calculate Activation Bonus, Repurchase Bonus and Monthly Commission, and credit earnings.</li>
+            <li>Manage your Member account, calculate Activation Bonus, Repurchase Bonus and Monthly Commission, and credit earnings.</li>
             <li>Provide customer support, answer queries and resolve disputes within 90 days through our internal grievance officer.</li>
-            <li>Send transactional updates (order status, payment receipts, BA payouts) and, with your consent, marketing communications about new produce and offers.</li>
+            <li>Send transactional updates (order status, payment receipts, Member payouts) and, with your consent, marketing communications about new produce and offers.</li>
             <li>Comply with statutory obligations under the IT Act, GST Act, Direct Selling Guidelines 2021 and other applicable laws.</li>
           </ul>
 

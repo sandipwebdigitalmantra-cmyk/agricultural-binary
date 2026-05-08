@@ -72,7 +72,7 @@ const html = `
               </div>
               <div class="product-img">
                 <span class="discount-tag">-25%</span>
-                <img class="product-photo" src="https://images.unsplash.com/photo-1582281298055-e25b84a30b0b?w=500&h=500&fit=crop&q=80" alt="Hybrid Tomato Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Tomato+Seeds';">
+                <img class="product-photo" src="/assets/products/tomato-seeds.jpg" alt="Hybrid Tomato Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Tomato+Seeds';">
               </div>
               <div class="product-info">
                 <span class="product-category">Vegetable Seeds</span>
@@ -91,7 +91,7 @@ const html = `
               </div>
               <div class="product-img">
                 <span class="discount-tag">-17%</span>
-                <img class="product-photo" src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500&h=500&fit=crop&q=80" alt="Organic Wheat Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Wheat+Seeds';">
+                <img class="product-photo" src="/assets/products/wheat-seeds.jpg" alt="Organic Wheat Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Wheat+Seeds';">
               </div>
               <div class="product-info">
                 <span class="product-category">Cereal Seeds</span>
@@ -110,7 +110,7 @@ const html = `
               </div>
               <div class="product-img">
                 <span class="discount-tag">-33%</span>
-                <img class="product-photo" src="https://images.unsplash.com/photo-1583484963886-cfe2bff2945f?w=500&h=500&fit=crop&q=80" alt="Chilli Seed Pack" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Chilli+Seeds';">
+                <img class="product-photo" src="/assets/products/chilli-seeds.jpg" alt="Chilli Seed Pack" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Chilli+Seeds';">
               </div>
               <div class="product-info">
                 <span class="product-category">Vegetable Seeds</span>
@@ -129,7 +129,7 @@ const html = `
               </div>
               <div class="product-img">
                 <span class="discount-tag">-25%</span>
-                <img class="product-photo" src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=500&h=500&fit=crop&q=80" alt="Marigold Flower Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Marigold';">
+                <img class="product-photo" src="/assets/products/marigold-seeds.jpg" alt="Marigold Flower Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Marigold';">
               </div>
               <div class="product-info">
                 <span class="product-category">Flower Seeds</span>
@@ -148,7 +148,7 @@ const html = `
               </div>
               <div class="product-img">
                 <span class="discount-tag">-25%</span>
-                <img class="product-photo" src="https://images.unsplash.com/photo-1604908554049-b2d6cf2b4f3d?w=500&h=500&fit=crop&q=80" alt="Cucumber Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Cucumber';">
+                <img class="product-photo" src="/assets/products/cucumber-seeds.jpg" alt="Cucumber Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Cucumber';">
               </div>
               <div class="product-info">
                 <span class="product-category">Vegetable Seeds</span>
@@ -167,7 +167,7 @@ const html = `
               </div>
               <div class="product-img">
                 <span class="discount-tag">-18%</span>
-                <img class="product-photo" src="https://images.unsplash.com/photo-1631292784640-2b24be784d5d?w=500&h=500&fit=crop&q=80" alt="Mustard Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Mustard';">
+                <img class="product-photo" src="/assets/products/mustard-seeds.jpg" alt="Mustard Seeds" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Mustard';">
               </div>
               <div class="product-info">
                 <span class="product-category">Oil Seeds</span>

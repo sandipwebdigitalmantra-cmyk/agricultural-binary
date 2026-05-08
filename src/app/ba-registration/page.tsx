@@ -1,6 +1,6 @@
 import BodyClass from "@/components/BodyClass";
 
-// Become a Brand Ambassador | BA Registration | Negila Sene
+// Become a Member | Member Registration | Negila Sene
 // Auto-generated from Frontend-design/ba-registration.html
 // Route: /ba-registration
 const html = `
@@ -9,9 +9,9 @@ const html = `
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a>
           <span aria-hidden="true">/</span>
-          <span>Become BA</span>
+          <span>Become Member</span>
         </nav>
-        <h1>Become a <span>Brand Ambassador</span></h1>
+        <h1>Become a <span>Member</span></h1>
         <p>Join the Negila Sene network. Activate with company-supplied accessories and start earning through structured Left/Right placement.</p>
       </div>
     </section>
@@ -19,9 +19,9 @@ const html = `
     <section class="section">
       <div class="container ba-grid">
         <form class="registration-form">
-          <span class="section-badge">BA Registration</span>
+          <span class="section-badge">Member Registration</span>
           <h2>Register <span>Your Profile</span></h2>
-          <p>Complete the form below and our Stock Point team will activate your BA account within 24 hours.</p>
+          <p>Complete the form below and our Stock Point team will activate your Member account within 24 hours.</p>
 
           <label>
             Full Name
@@ -62,7 +62,7 @@ const html = `
           </label>
 
           <label>
-            Sponsor BA ID <small>(optional)</small>
+            Sponsor Member ID <small>(optional)</small>
             <input type="text" name="sponsor" placeholder="e.g. NS-12345">
           </label>
 
@@ -74,7 +74,7 @@ const html = `
 
           <label class="filter-check">
             <input type="checkbox" required>
-            I agree to the Terms &amp; Conditions and BA Code of Conduct.
+            I agree to the Terms &amp; Conditions and Member Code of Conduct.
           </label>
 
           <button class="btn-gold" type="submit">
@@ -84,9 +84,9 @@ const html = `
         </form>
 
         <aside>
-          <span class="section-badge">BA Benefits</span>
+          <span class="section-badge">Member Benefits</span>
           <h2>Why <span>Join Us</span></h2>
-          <p>Negila Sene Brand Ambassadors enjoy a clear, company-backed earning structure plus full Stock Point support.</p>
+          <p>Negila Sene Members enjoy a clear, company-backed earning structure plus full Stock Point support.</p>
 
           <div class="term-grid">
             <article>
@@ -94,15 +94,15 @@ const html = `
               <p>Earn an Activation Bonus on every 2:1 matching pair in your placement tree.</p>
             </article>
             <article>
-              <strong>Repurchase Bonus on 500 PV</strong>
-              <p>Repurchase Bonus credited on every 500 PV achieved on Left and Right legs.</p>
+              <strong>Repurchase Bonus on 500 points</strong>
+              <p>Repurchase Bonus credited on every 500 points achieved on Left and Right legs.</p>
             </article>
             <article>
               <strong>Monthly Commission</strong>
-              <p>Stay active with minimum 50 PV per month to qualify for the Monthly Commission pool.</p>
+              <p>Stay active with minimum 50 points per month to qualify for the Monthly Commission pool.</p>
             </article>
             <article>
-              <strong>No-PV Accessories</strong>
+              <strong>Branded Accessories</strong>
               <p>Cap, T-shirt, Stickers, Badges and more supplied directly by the company.</p>
             </article>
             <article>
@@ -111,7 +111,7 @@ const html = `
             </article>
             <article>
               <strong>Need Help?</strong>
-              <p>Call <strong>+91 98765 43210</strong> or email <strong>support@negilasene.com</strong> &mdash; our BA care team responds within one working day.</p>
+              <p>Call <strong>+91 98765 43210</strong> or email <strong>support@negilasene.com</strong> &mdash; our Member care team responds within one working day.</p>
             </article>
           </div>
         </aside>

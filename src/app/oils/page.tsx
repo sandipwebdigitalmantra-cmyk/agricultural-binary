@@ -57,7 +57,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Best Seller</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-20%</span><img class="product-photo" src="https://images.unsplash.com/photo-1599909533730-a6a4c5b40e94?w=500&h=500&fit=crop&q=80" alt="Mustard Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/e89328/ffffff/png?text=Mustard+Oil';"></div>
+              <div class="product-img"><span class="discount-tag">-20%</span><img class="product-photo" src="/assets/products/mustard-oil.jpg" alt="Mustard Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/e89328/ffffff/png?text=Mustard+Oil';"></div>
               <div class="product-info">
                 <span class="product-category">Cooking Oil</span>
                 <h3>Mustard Oil 1L</h3>
@@ -70,7 +70,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge hot">Hot</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-21%</span><img class="product-photo" src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab12?w=500&h=500&fit=crop&q=80" alt="Coconut Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Coconut';"></div>
+              <div class="product-img"><span class="discount-tag">-21%</span><img class="product-photo" src="/assets/products/coconut-oil.jpg" alt="Coconut Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/2d7a2d/ffffff/png?text=Coconut';"></div>
               <div class="product-info">
                 <span class="product-category">Cooking Oil</span>
                 <h3>Coconut Oil 1L</h3>
@@ -83,7 +83,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Top Pick</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-19%</span><img class="product-photo" src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500&h=500&fit=crop&q=80" alt="Groundnut Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/e89328/ffffff/png?text=Groundnut';"></div>
+              <div class="product-img"><span class="discount-tag">-19%</span><img class="product-photo" src="/assets/products/groundnut-oil.jpg" alt="Groundnut Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/e89328/ffffff/png?text=Groundnut';"></div>
               <div class="product-info">
                 <span class="product-category">Cooking Oil</span>
                 <h3>Groundnut Oil 1L</h3>
@@ -96,7 +96,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge new">New</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-22%</span><img class="product-photo" src="https://images.unsplash.com/photo-1612442058814-4a3a3c7f8f47?w=500&h=500&fit=crop&q=80" alt="Sesame Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Sesame';"></div>
+              <div class="product-img"><span class="discount-tag">-22%</span><img class="product-photo" src="/assets/products/sesame-oil.jpg" alt="Sesame Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8a6028/ffffff/png?text=Sesame';"></div>
               <div class="product-info">
                 <span class="product-category">Cooking Oil</span>
                 <h3>Sesame Oil 500ml</h3>
@@ -109,7 +109,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Limited</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-22%</span><img class="product-photo" src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500&h=500&fit=crop&q=80" alt="Sunflower Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/e89328/ffffff/png?text=Sunflower';"></div>
+              <div class="product-img"><span class="discount-tag">-22%</span><img class="product-photo" src="/assets/products/sunflower-oil.jpg" alt="Sunflower Oil" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/e89328/ffffff/png?text=Sunflower';"></div>
               <div class="product-info">
                 <span class="product-category">Cooking Oil</span>
                 <h3>Sunflower Oil 1L</h3>
@@ -122,7 +122,7 @@ const html = `
             <article class="product-card">
               <span class="product-badge">Best Seller</span>
               <div class="product-actions"><button class="product-action" type="button" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.3 10.6 20C5.4 15.3 2 12.2 2 8.3 2 5.2 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.2 22 8.3c0 3.9-3.4 7-8.6 11.7L12 21.3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="product-action" type="button" aria-label="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2 12 2 12s4.5 7 10 7 10-7 10-7-4.5-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></button></div>
-              <div class="product-img"><span class="discount-tag">-15%</span><img class="product-photo" src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&h=500&fit=crop&q=80" alt="Pure Cow Ghee" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/e89328/ffffff/png?text=Ghee';"></div>
+              <div class="product-img"><span class="discount-tag">-15%</span><img class="product-photo" src="/assets/products/cow-ghee.jpg" alt="Pure Cow Ghee" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/500x500/e89328/ffffff/png?text=Ghee';"></div>
               <div class="product-info">
                 <span class="product-category">Ghee</span>
                 <h3>Pure Cow Ghee 500ml</h3>

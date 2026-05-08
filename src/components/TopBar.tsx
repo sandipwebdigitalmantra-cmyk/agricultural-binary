@@ -13,7 +13,7 @@ export default function TopBar() {
             <svg className="top-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M3 5h18c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1zm9 8 8-6H4l8 6zm-3.1-.5L4 16.2V17h16v-.8l-4.9-3.7-2.5 1.9c-.4.3-.9.3-1.2 0l-2.5-1.9z" />
             </svg>
-            support@NegilaSene.com
+            support@negilasene.com
           </span>
         </div>
         <div className="top-offer">

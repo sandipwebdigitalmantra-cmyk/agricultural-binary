@@ -11,29 +11,29 @@ import LinkInterceptor from "@/components/LinkInterceptor";
 import FloatingActions from "@/components/FloatingActions";
 
 export const metadata: Metadata = {
-  title: "Negila Sene | Eco E-Commerce & BA Network",
-  description:
-    "Authentic agricultural produce sourced directly from Indian farmers, with structured BA opportunities and Stock Point support.",
+ title: "Negila Sene | E-Commerce & Member Network",
+ description:
+ "Authentic agricultural produce sourced directly from Indian farmers, with structured Member opportunities and Stock Point support.",
 };
 
 export default function RootLayout({
-  children,
+ children,
 }: Readonly<{
-  children: React.ReactNode;
+ children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>
-        <TopBar />
-        <SiteHeader />
-        {children}
-        <SiteFooter />
-        <FloatingActions />
-        <LinkInterceptor />
-        <Suspense fallback={null}>
-          <ClientScripts />
-        </Suspense>
-      </body>
-    </html>
-  );
+ return (
+ <html lang="en">
+ <body>
+ <TopBar />
+ <SiteHeader />
+ {children}
+ <SiteFooter />
+ <FloatingActions />
+ <LinkInterceptor />
+ <Suspense fallback={null}>
+ <ClientScripts />
+ </Suspense>
+ </body>
+ </html>
+ );
 }
