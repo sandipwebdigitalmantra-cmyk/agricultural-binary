@@ -42,15 +42,15 @@ const html = `
                 <span class="tracker-dot" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19l12-12-1.4-1.4z"/></svg>
                 </span>
-                <span class="tracker-label">Order Placed</span>
+                <span class="tracker-label">Ordered</span>
               </li>
               <li class="tracker-step is-current">
                 <span class="tracker-dot" aria-hidden="true">2</span>
-                <span class="tracker-label">Processing</span>
+                <span class="tracker-label">Shipped</span>
               </li>
               <li class="tracker-step">
                 <span class="tracker-dot" aria-hidden="true">3</span>
-                <span class="tracker-label">Shipped</span>
+                <span class="tracker-label">Out for Delivery</span>
               </li>
               <li class="tracker-step">
                 <span class="tracker-dot" aria-hidden="true">4</span>

@@ -79,7 +79,6 @@ const html = `
                 <h3>Hybrid Tomato Seeds</h3>
                 <div class="rating"><span class="stars" style="--rating:5" aria-label="Rated 5 out of 5"></span><small>(86)</small></div>
                 <div class="product-price"><strong>Rs.149</strong><del>Rs.199</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -99,7 +98,6 @@ const html = `
                 <h3>Organic Wheat Seeds 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5" aria-label="Rated 4.5 out of 5"></span><small>(64)</small></div>
                 <div class="product-price"><strong>Rs.249</strong><del>Rs.299</del><em>17% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -119,7 +117,6 @@ const html = `
                 <h3>Chilli Seed Pack</h3>
                 <div class="rating"><span class="stars" style="--rating:5" aria-label="Rated 5 out of 5"></span><small>(102)</small></div>
                 <div class="product-price"><strong>Rs.99</strong><del>Rs.149</del><em>33% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -139,7 +136,6 @@ const html = `
                 <h3>Marigold Flower Seeds</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5" aria-label="Rated 4.5 out of 5"></span><small>(47)</small></div>
                 <div class="product-price"><strong>Rs.89</strong><del>Rs.119</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -159,7 +155,6 @@ const html = `
                 <h3>Cucumber Seeds</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5" aria-label="Rated 4.5 out of 5"></span><small>(38)</small></div>
                 <div class="product-price"><strong>Rs.119</strong><del>Rs.159</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -179,7 +174,6 @@ const html = `
                 <h3>Mustard Seeds 500g</h3>
                 <div class="rating"><span class="stars" style="--rating:5" aria-label="Rated 5 out of 5"></span><small>(73)</small></div>
                 <div class="product-price"><strong>Rs.179</strong><del>Rs.219</del><em>18% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>

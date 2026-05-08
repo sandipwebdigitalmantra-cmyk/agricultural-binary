@@ -63,7 +63,6 @@ const html = `
                 <h3>Turmeric Powder 500g</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(234)</small></div>
                 <div class="product-price"><strong>Rs.149</strong><del>Rs.199</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -77,7 +76,6 @@ const html = `
                 <h3>Red Chilli Powder 500g</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(187)</small></div>
                 <div class="product-price"><strong>Rs.169</strong><del>Rs.219</del><em>23% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -91,7 +89,6 @@ const html = `
                 <h3>Garam Masala 200g</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(156)</small></div>
                 <div class="product-price"><strong>Rs.119</strong><del>Rs.149</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -105,7 +102,6 @@ const html = `
                 <h3>Cumin Seeds 250g</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(89)</small></div>
                 <div class="product-price"><strong>Rs.139</strong><del>Rs.179</del><em>22% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -119,7 +115,6 @@ const html = `
                 <h3>Coriander Powder 500g</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(67)</small></div>
                 <div class="product-price"><strong>Rs.109</strong><del>Rs.139</del><em>22% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -133,7 +128,6 @@ const html = `
                 <h3>Cardamom Pods 100g</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(124)</small></div>
                 <div class="product-price"><strong>Rs.449</strong><del>Rs.549</del><em>18% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>

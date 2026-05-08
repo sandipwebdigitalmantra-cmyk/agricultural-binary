@@ -63,7 +63,6 @@ const html = `
                 <h3>Whole Wheat Flour 10kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(312)</small></div>
                 <div class="product-price"><strong>Rs.449</strong><del>Rs.549</del><em>18% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -77,7 +76,6 @@ const html = `
                 <h3>Sharbati Wheat 5kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(198)</small></div>
                 <div class="product-price"><strong>Rs.379</strong><del>Rs.469</del><em>19% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -91,7 +89,6 @@ const html = `
                 <h3>Multigrain Atta 5kg</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(145)</small></div>
                 <div class="product-price"><strong>Rs.399</strong><del>Rs.499</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -105,7 +102,6 @@ const html = `
                 <h3>Wheat Daliya 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(87)</small></div>
                 <div class="product-price"><strong>Rs.119</strong><del>Rs.159</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -119,7 +115,6 @@ const html = `
                 <h3>Suji Semolina 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(64)</small></div>
                 <div class="product-price"><strong>Rs.99</strong><del>Rs.129</del><em>23% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -133,7 +128,6 @@ const html = `
                 <h3>Maida All Purpose 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(156)</small></div>
                 <div class="product-price"><strong>Rs.89</strong><del>Rs.119</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 interface CartItem {
   id: string;
@@ -50,8 +50,8 @@ function nsExtractFromCard(card: Element): CartItem | null {
   const offText = (
     card.querySelector(".product-price em")?.textContent || ""
   ).trim();
-  const price = Number(priceText.replace(/[^\d.]/g, "")) || 0;
-  const original = Number(originalText.replace(/[^\d.]/g, "")) || 0;
+  const price = Number(priceText.replace(/[^\d]/g, "")) || 0;
+  const original = Number(originalText.replace(/[^\d]/g, "")) || 0;
   const image =
     (card.querySelector(".product-img img") as HTMLImageElement | null)?.src ||
     (card.querySelector(".product-photo") as HTMLImageElement | null)?.src ||
@@ -78,12 +78,52 @@ function nsExtractFromCard(card: Element): CartItem | null {
   return item;
 }
 
+function nsReadOrders(): NsOrder[] {
+  try {
+    const raw = localStorage.getItem("ns_orders");
+    return raw ? (JSON.parse(raw) as NsOrder[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+interface NsOrder {
+  id: string;
+  name: string;
+  email: string;
+  phone: string;
+  address1: string;
+  address2: string;
+  city: string;
+  pincode: string;
+  state: string;
+  payment: string;
+  items: CartItem[];
+  subtotal: number;
+  discount: number;
+  shipping: number;
+  gst: number;
+  total: number;
+  placedAt: number;
+}
+
+function nsOrderStage(placedAt: number): 0 | 1 | 2 | 3 {
+  const hours = (Date.now() - placedAt) / 3_600_000;
+  if (hours < 1) return 0;
+  if (hours < 24) return 1;
+  if (hours < 72) return 2;
+  return 3;
+}
+
+const NS_STAGE_LABELS = ["Ordered", "Shipped", "Out for Delivery", "Delivered"];
+
 function nsUpdateBadges() {
   const cartCountTotal = nsRead(NS_STORE.cart).reduce(
     (sum, i) => sum + (Number(i.qty) || 1),
     0
   );
   const wishCountTotal = nsRead(NS_STORE.wishlist).length;
+  const ordersCountTotal = nsReadOrders().length;
   document
     .querySelectorAll(
       'a.action-btn[href$="/cart"] b, a.action-btn[href$="/cart"] #cartCount, a.action-btn[href$="cart.html"] b, a.action-btn[href$="cart.html"] #cartCount'
@@ -97,6 +137,13 @@ function nsUpdateBadges() {
     )
     .forEach((b) => {
       b.textContent = String(wishCountTotal);
+    });
+  document
+    .querySelectorAll(
+      'a.action-btn[href$="/my-orders"] b, a.action-btn[href$="/my-orders"] #myOrdersCount'
+    )
+    .forEach((b) => {
+      b.textContent = String(ordersCountTotal);
     });
 }
 
@@ -118,7 +165,7 @@ function nsCardItemId(card: Element): string | null {
   const priceText = (
     card.querySelector(".product-price strong")?.textContent || "Rs.0"
   ).trim();
-  const price = Number(priceText.replace(/[^\d.]/g, "")) || 0;
+  const price = Number(priceText.replace(/[^\d]/g, "")) || 0;
   return nsItemId({ name, price });
 }
 
@@ -473,6 +520,359 @@ function nsRenderWishlistPage() {
   });
 }
 
+function nsRenderCheckoutPage() {
+  if (!document.body.classList.contains("checkout")) return;
+  const form = document.getElementById("checkoutForm") as HTMLFormElement | null;
+  if (!form) return;
+
+  const summaryEmpty = document.getElementById("checkoutSummaryEmpty");
+  const subLabel = document.getElementById("coSubLabel");
+  const subtotalEl = document.getElementById("coSubtotal");
+  const discountEl = document.getElementById("coDiscount");
+  const shippingEl = document.getElementById("coShipping");
+  const gstEl = document.getElementById("coGst");
+  const totalEl = document.getElementById("coTotal");
+  const placeOrderBtn = document.getElementById(
+    "placeOrderBtn"
+  ) as HTMLButtonElement | null;
+  const statusEl = form.querySelector(".checkout-status") as HTMLElement | null;
+
+  const cart = nsRead(NS_STORE.cart);
+  const itemCount = cart.reduce((sum, i) => sum + i.qty, 0);
+  const subtotal = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
+  const totalOriginal = cart.reduce(
+    (sum, i) => sum + (i.original || i.price) * i.qty,
+    0
+  );
+  const discount = Math.max(0, totalOriginal - subtotal);
+  const shipping = cart.length === 0 ? 0 : subtotal >= 555 ? 0 : 49;
+  const gst = Math.round(subtotal * 0.05);
+  const total = subtotal + shipping + gst;
+
+  if (subLabel)
+    subLabel.textContent = `(${itemCount} item${itemCount === 1 ? "" : "s"})`;
+  if (subtotalEl) subtotalEl.textContent = "Rs." + subtotal;
+  if (discountEl) discountEl.textContent = "- Rs." + discount;
+  if (shippingEl)
+    shippingEl.textContent = shipping === 0 ? "FREE" : "Rs." + shipping;
+  if (gstEl) gstEl.textContent = "Rs." + gst;
+  if (totalEl) totalEl.textContent = "Rs." + total;
+
+  if (cart.length === 0) {
+    if (summaryEmpty) summaryEmpty.hidden = false;
+    if (placeOrderBtn) {
+      placeOrderBtn.disabled = true;
+      placeOrderBtn.style.opacity = "0.55";
+      placeOrderBtn.style.cursor = "not-allowed";
+    }
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (cart.length === 0) {
+      if (statusEl)
+        statusEl.textContent =
+          "Your cart is empty. Add items before placing an order.";
+      return;
+    }
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    const fd = new FormData(form);
+    const paymentMap: Record<string, string> = {
+      upi: "UPI",
+      card: "Credit / Debit Card",
+      netbanking: "Net Banking",
+      cod: "Cash on Delivery",
+    };
+    const paymentVal = String(fd.get("payment") || "cod");
+    const order = {
+      id: "NS-" + Math.random().toString(36).slice(2, 10).toUpperCase(),
+      name: String(fd.get("name") || ""),
+      email: String(fd.get("email") || ""),
+      phone: String(fd.get("phone") || ""),
+      address1: String(fd.get("address1") || ""),
+      address2: String(fd.get("address2") || ""),
+      city: String(fd.get("city") || ""),
+      pincode: String(fd.get("pincode") || ""),
+      state: String(fd.get("state") || ""),
+      payment: paymentMap[paymentVal] || paymentVal,
+      items: cart,
+      subtotal,
+      discount,
+      shipping,
+      gst,
+      total,
+      placedAt: Date.now(),
+    };
+    try {
+      sessionStorage.setItem("ns_last_order", JSON.stringify(order));
+    } catch {}
+    try {
+      const raw = localStorage.getItem("ns_orders");
+      const orders = raw ? (JSON.parse(raw) as unknown[]) : [];
+      orders.unshift(order);
+      localStorage.setItem("ns_orders", JSON.stringify(orders));
+    } catch {}
+    nsWrite(NS_STORE.cart, []);
+    nsUpdateBadges();
+    if (placeOrderBtn) {
+      placeOrderBtn.disabled = true;
+      placeOrderBtn.textContent = "Placing Order...";
+    }
+    if (statusEl) statusEl.textContent = "Redirecting to confirmation...";
+    window.location.href = "/order-confirmed";
+  });
+}
+
+function nsRenderOrderConfirmedPage() {
+  if (!document.body.classList.contains("order-confirmed")) return;
+  type LastOrder = {
+    id?: string;
+    name?: string;
+    email?: string;
+    payment?: string;
+    total?: number;
+  };
+  let parsed: LastOrder | null = null;
+  try {
+    const raw = sessionStorage.getItem("ns_last_order");
+    parsed = raw ? (JSON.parse(raw) as LastOrder) : null;
+  } catch {}
+  if (!parsed) return;
+  const order: LastOrder = parsed;
+
+  const orderIdEl = document.querySelector(".confirm-orderid");
+  const totalEl = document.querySelector(".confirm-total");
+  if (orderIdEl && order.id) orderIdEl.textContent = order.id;
+  if (totalEl && typeof order.total === "number") {
+    totalEl.textContent = "Rs." + order.total.toLocaleString("en-IN");
+  }
+  document.querySelectorAll(".confirm-meta-row").forEach((row) => {
+    const label = row
+      .querySelector(".confirm-meta-label")
+      ?.textContent?.trim();
+    const valueEl = row.querySelector(".confirm-meta-value");
+    if (!valueEl) return;
+    if (label === "Customer Name" && order.name) valueEl.textContent = order.name;
+    else if (label === "Email" && order.email) valueEl.textContent = order.email;
+    else if (label === "Payment Method" && order.payment)
+      valueEl.textContent = order.payment;
+  });
+}
+
+function nsEscape(input: string): string {
+  return String(input ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function nsFormatDate(ms: number): string {
+  try {
+    return new Date(ms).toLocaleString("en-IN", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+  } catch {
+    return new Date(ms).toString();
+  }
+}
+
+function nsRenderMyOrdersPage() {
+  if (!document.body.classList.contains("my-orders")) return;
+  const root = document.getElementById("myOrdersRoot");
+  if (!root) return;
+
+  const orders = nsReadOrders();
+  if (orders.length === 0) return;
+
+  const cardsHtml = orders
+    .map((order) => {
+      const stage = nsOrderStage(order.placedAt);
+      const stageLabel = NS_STAGE_LABELS[stage];
+      const statusClass =
+        stage === 3
+          ? "status-delivered"
+          : stage === 2
+            ? "status-shipped"
+            : stage === 1
+              ? "status-processing"
+              : "status-placed";
+
+      const trackerHtml = NS_STAGE_LABELS.map((label, idx) => {
+        const cls =
+          idx < stage
+            ? "tracker-step is-done"
+            : idx === stage
+              ? "tracker-step is-current"
+              : "tracker-step";
+        const dotInner =
+          idx < stage
+            ? '<svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19l12-12-1.4-1.4z"/></svg>'
+            : String(idx + 1);
+        return `
+          <li class="${cls}">
+            <span class="tracker-dot" aria-hidden="true">${dotInner}</span>
+            <span class="tracker-label">${label}</span>
+          </li>`;
+      }).join("");
+
+      const itemsHtml = (order.items || [])
+        .map(
+          (item) => `
+        <div class="order-item">
+          <div class="order-item-img">
+            <img src="${nsEscape(item.image)}" alt="${nsEscape(item.name)}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/120x120/2d7a2d/ffffff/png?text=Product';">
+          </div>
+          <div class="order-item-info">
+            ${item.category ? `<span class="product-category">${nsEscape(item.category)}</span>` : ""}
+            <h4>${nsEscape(item.name)}</h4>
+            <small>Qty ${item.qty} &times; Rs.${item.price}</small>
+          </div>
+          <div class="order-item-total">Rs.${item.price * item.qty}</div>
+        </div>`
+        )
+        .join("");
+
+      const addressLine = [
+        order.address1,
+        order.address2,
+        order.city,
+        order.state,
+        order.pincode,
+      ]
+        .filter(Boolean)
+        .map(nsEscape)
+        .join(", ");
+
+      return `
+      <article class="order-card" data-order-id="${nsEscape(order.id)}">
+        <header class="order-card-header">
+          <div class="order-card-id">
+            <span class="order-id">${nsEscape(order.id)}</span>
+            <span class="order-date">Placed on ${nsEscape(nsFormatDate(order.placedAt))}</span>
+          </div>
+          <span class="order-status ${statusClass}">${stageLabel}</span>
+        </header>
+
+        <ol class="tracker-list">${trackerHtml}</ol>
+
+        <div class="order-section">
+          <h3 class="order-section-title">Items (${(order.items || []).length})</h3>
+          <div class="order-items">${itemsHtml}</div>
+        </div>
+
+        <div class="order-section">
+          <h3 class="order-section-title">Order Details</h3>
+          <div class="order-meta-grid">
+            <div class="order-meta-cell"><span>Customer</span><strong>${nsEscape(order.name)}</strong></div>
+            <div class="order-meta-cell"><span>Email</span><strong>${nsEscape(order.email)}</strong></div>
+            <div class="order-meta-cell"><span>Phone</span><strong>${nsEscape(order.phone)}</strong></div>
+            <div class="order-meta-cell"><span>Payment</span><strong>${nsEscape(order.payment)}</strong></div>
+            <div class="order-meta-cell order-meta-cell-wide"><span>Shipping Address</span><strong>${addressLine || "&mdash;"}</strong></div>
+          </div>
+        </div>
+
+        <footer class="order-card-footer">
+          <div class="summary-row"><span>Subtotal</span><strong>Rs.${order.subtotal}</strong></div>
+          <div class="summary-row"><span>Discount</span><strong class="discount-value">- Rs.${order.discount}</strong></div>
+          <div class="summary-row"><span>Shipping</span><strong>${order.shipping === 0 ? "FREE" : "Rs." + order.shipping}</strong></div>
+          <div class="summary-row"><span>GST (5%)</span><strong>Rs.${order.gst}</strong></div>
+          <div class="summary-divider"></div>
+          <div class="summary-row summary-total"><span>Total</span><strong>Rs.${order.total}</strong></div>
+        </footer>
+      </article>`;
+    })
+    .join("");
+
+  root.innerHTML = `
+    <div class="catalog-toolbar">
+      <h2>Your Orders</h2>
+      <span class="result-count">${orders.length} order${orders.length === 1 ? "" : "s"}</span>
+    </div>
+    <div class="orders-list">${cardsHtml}</div>
+  `;
+}
+
+function nsApplySearchFilter() {
+  let q = "";
+  try {
+    q = (new URLSearchParams(window.location.search).get("q") || "")
+      .trim()
+      .toLowerCase();
+  } catch {
+    return;
+  }
+  if (!q) return;
+
+  const cards = Array.from(
+    document.querySelectorAll<HTMLElement>(".product-card")
+  );
+  if (cards.length === 0) return;
+
+  let visible = 0;
+  cards.forEach((card) => {
+    const name = (card.querySelector("h3")?.textContent || "").toLowerCase();
+    const category = (
+      card.querySelector(".product-category")?.textContent || ""
+    ).toLowerCase();
+    const badge = (
+      card.querySelector(".product-badge")?.textContent || ""
+    ).toLowerCase();
+    const match =
+      name.includes(q) || category.includes(q) || badge.includes(q);
+    card.style.display = match ? "" : "none";
+    if (match) visible += 1;
+  });
+
+  document
+    .querySelectorAll<HTMLElement>(".pagination")
+    .forEach((p) => (p.style.display = "none"));
+
+  const resultCount = document.querySelector<HTMLElement>(".result-count");
+  if (resultCount) {
+    resultCount.textContent =
+      visible === 0
+        ? `No products match "${q}"`
+        : `Showing ${visible} result${visible === 1 ? "" : "s"} for "${q}"`;
+  }
+
+  const toolbar = document.querySelector<HTMLElement>(".catalog-toolbar");
+  if (toolbar && !document.querySelector(".search-clear")) {
+    const clearBtn = document.createElement("a");
+    clearBtn.href =
+      window.location.pathname.includes("/shop") ? "/shop" : window.location.pathname;
+    clearBtn.className = "search-clear";
+    clearBtn.textContent = "Clear search ×";
+    toolbar.appendChild(clearBtn);
+  }
+
+  document
+    .querySelectorAll<HTMLAnchorElement>(".cat-list a")
+    .forEach((a) => a.classList.remove("active"));
+  const catLinks = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>(".cat-list a")
+  );
+  const match = catLinks.find((a) => {
+    const txt = (
+      a.childNodes[0]?.textContent ||
+      a.textContent ||
+      ""
+    )
+      .trim()
+      .toLowerCase();
+    return txt === q || txt.startsWith(q) || q.startsWith(txt);
+  });
+  if (match) match.classList.add("active");
+}
+
 function initPage(): () => void {
   const cleanups: Array<() => void> = [];
   const bind = <T extends Element, E extends Event>(
@@ -674,6 +1074,19 @@ function initPage(): () => void {
   nsRenderCartPage();
   nsRenderWishlistPage();
   nsRenderProductPage();
+  nsRenderCheckoutPage();
+  nsRenderOrderConfirmedPage();
+  nsRenderMyOrdersPage();
+
+  const nsActiveQuery = (() => {
+    try {
+      return (
+        new URLSearchParams(window.location.search).get("q") || ""
+      ).trim();
+    } catch {
+      return "";
+    }
+  })();
 
   // Pagination
   document
@@ -750,12 +1163,14 @@ function initPage(): () => void {
         if (current < totalPages) showPage(current + 1);
       });
 
-      const initial = Number(
-        (
-          pagination.querySelector(".page-btn.active")?.textContent || "1"
-        ).trim()
-      );
-      showPage(initial);
+      if (!nsActiveQuery) {
+        const initial = Number(
+          (
+            pagination.querySelector(".page-btn.active")?.textContent || "1"
+          ).trim()
+        );
+        showPage(initial);
+      }
     });
 
   // Catalog filter
@@ -782,7 +1197,7 @@ function initPage(): () => void {
     function getCardPrice(card: HTMLElement): number {
       const t = (
         card.querySelector(".product-price strong")?.textContent || "0"
-      ).replace(/[^\d.]/g, "");
+      ).replace(/[^\d]/g, "");
       return Number(t) || 0;
     }
 
@@ -900,7 +1315,7 @@ function initPage(): () => void {
     function priceOf(card: HTMLElement): number {
       const t = (
         card.querySelector(".product-price strong")?.textContent || "0"
-      ).replace(/[^\d.]/g, "");
+      ).replace(/[^\d]/g, "");
       return Number(t) || 0;
     }
     function ratingOf(card: HTMLElement): number {
@@ -1106,6 +1521,8 @@ function initPage(): () => void {
     });
   }
 
+  if (nsActiveQuery) nsApplySearchFilter();
+
   return () => {
     cleanups.forEach((c) => c());
     if (slideTimer) window.clearInterval(slideTimer as unknown as number);
@@ -1114,9 +1531,11 @@ function initPage(): () => void {
 
 export default function ClientScripts() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const search = searchParams.toString();
   useEffect(() => {
     const cleanup = initPage();
     return cleanup;
-  }, [pathname]);
+  }, [pathname, search]);
   return null;
 }

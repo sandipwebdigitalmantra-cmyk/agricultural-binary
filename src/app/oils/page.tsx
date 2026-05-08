@@ -63,7 +63,6 @@ const html = `
                 <h3>Mustard Oil 1L</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(198)</small></div>
                 <div class="product-price"><strong>Rs.199</strong><del>Rs.249</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -77,7 +76,6 @@ const html = `
                 <h3>Coconut Oil 1L</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(156)</small></div>
                 <div class="product-price"><strong>Rs.299</strong><del>Rs.379</del><em>21% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -91,7 +89,6 @@ const html = `
                 <h3>Groundnut Oil 1L</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(112)</small></div>
                 <div class="product-price"><strong>Rs.219</strong><del>Rs.269</del><em>19% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -105,7 +102,6 @@ const html = `
                 <h3>Sesame Oil 500ml</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(78)</small></div>
                 <div class="product-price"><strong>Rs.249</strong><del>Rs.319</del><em>22% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -119,7 +115,6 @@ const html = `
                 <h3>Sunflower Oil 1L</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(234)</small></div>
                 <div class="product-price"><strong>Rs.179</strong><del>Rs.229</del><em>22% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -133,7 +128,6 @@ const html = `
                 <h3>Pure Cow Ghee 500ml</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(287)</small></div>
                 <div class="product-price"><strong>Rs.549</strong><del>Rs.649</del><em>15% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>

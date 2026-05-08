@@ -118,8 +118,7 @@ const html = `
                   <span class="product-tag gold">Premium</span>
                 </div>
                 <div class="product-price"><strong>Rs.599</strong><del>Rs.799</del><em>25% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -150,8 +149,7 @@ const html = `
                   <span class="product-tag warm">Stone Ground</span>
                 </div>
                 <div class="product-price"><strong>Rs.449</strong><del>Rs.549</del><em>18% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -182,8 +180,7 @@ const html = `
                   <span class="product-tag gold">High Protein</span>
                 </div>
                 <div class="product-price"><strong>Rs.159</strong><del>Rs.199</del><em>20% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -214,8 +211,7 @@ const html = `
                   <span class="product-tag gold">Easy Cook</span>
                 </div>
                 <div class="product-price"><strong>Rs.139</strong><del>Rs.179</del><em>22% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -246,8 +242,7 @@ const html = `
                   <span class="product-tag gold">Family Pack</span>
                 </div>
                 <div class="product-price"><strong>Rs.299</strong><del>Rs.349</del><em>14% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -278,8 +273,7 @@ const html = `
                   <span class="product-tag gold">Pure</span>
                 </div>
                 <div class="product-price"><strong>Rs.199</strong><del>Rs.249</del><em>20% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -310,8 +304,7 @@ const html = `
                   <span class="product-tag gold">Hand Churned</span>
                 </div>
                 <div class="product-price"><strong>Rs.549</strong><del>Rs.649</del><em>15% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -342,8 +335,7 @@ const html = `
                   <span class="product-tag gold">Premium</span>
                 </div>
                 <div class="product-price"><strong>Rs.249</strong><del>Rs.299</del><em>17% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -374,8 +366,7 @@ const html = `
                   <span class="product-tag gold">Lab Tested</span>
                 </div>
                 <div class="product-price"><strong>Rs.149</strong><del>Rs.199</del><em>25% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -406,8 +397,7 @@ const html = `
                   <span class="product-tag gold">Pure</span>
                 </div>
                 <div class="product-price"><strong>Rs.169</strong><del>Rs.219</del><em>23% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -438,8 +428,7 @@ const html = `
                   <span class="product-tag warm">F1 Hybrid</span>
                 </div>
                 <div class="product-price"><strong>Rs.149</strong><del>Rs.199</del><em>25% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>
@@ -470,8 +459,7 @@ const html = `
                   <span class="product-tag gold">Champagne of Teas</span>
                 </div>
                 <div class="product-price"><strong>Rs.449</strong><del>Rs.549</del><em>18% off</em></div>
-                <div class="pv-note">100% Authentic | Direct from Farm</div>
-                <div class="cart-row">
+                  <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
                 </div>

@@ -71,7 +71,6 @@ const html = `
                 <h3>Refined White Sugar 5kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(156)</small></div>
                 <div class="product-price"><strong>Rs.299</strong><del>Rs.349</del><em>14% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -85,7 +84,6 @@ const html = `
                 <h3>Organic Brown Sugar 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(88)</small></div>
                 <div class="product-price"><strong>Rs.149</strong><del>Rs.199</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -99,7 +97,6 @@ const html = `
                 <h3>Jaggery Powder 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(124)</small></div>
                 <div class="product-price"><strong>Rs.199</strong><del>Rs.249</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -113,7 +110,6 @@ const html = `
                 <h3>Sugar Cubes 500g</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(42)</small></div>
                 <div class="product-price"><strong>Rs.119</strong><del>Rs.149</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -127,7 +123,6 @@ const html = `
                 <h3>Powdered Sugar 500g</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(36)</small></div>
                 <div class="product-price"><strong>Rs.99</strong><del>Rs.129</del><em>23% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -141,7 +136,6 @@ const html = `
                 <h3>Khandsari Sugar 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(67)</small></div>
                 <div class="product-price"><strong>Rs.169</strong><del>Rs.219</del><em>23% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>

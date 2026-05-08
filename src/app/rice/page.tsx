@@ -65,7 +65,6 @@ const html = `
                 <h3>Basmati Rice 5kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(234)</small></div>
                 <div class="product-price"><strong>Rs.599</strong><del>Rs.799</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -79,7 +78,6 @@ const html = `
                 <h3>Sona Masoori 5kg</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(187)</small></div>
                 <div class="product-price"><strong>Rs.449</strong><del>Rs.549</del><em>18% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -93,7 +91,6 @@ const html = `
                 <h3>Brown Rice 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(145)</small></div>
                 <div class="product-price"><strong>Rs.159</strong><del>Rs.199</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -107,7 +104,6 @@ const html = `
                 <h3>Jasmine Rice 5kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(98)</small></div>
                 <div class="product-price"><strong>Rs.549</strong><del>Rs.699</del><em>21% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -121,7 +117,6 @@ const html = `
                 <h3>Red Rice 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(76)</small></div>
                 <div class="product-price"><strong>Rs.189</strong><del>Rs.239</del><em>21% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -135,7 +130,6 @@ const html = `
                 <h3>Black Rice 500g</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(54)</small></div>
                 <div class="product-price"><strong>Rs.249</strong><del>Rs.299</del><em>17% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>

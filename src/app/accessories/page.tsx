@@ -101,7 +101,6 @@ const html = `
                 <h3>Branded Cap</h3>
                 <div class="rating"><span class="stars" style="--rating:5" aria-label="Rated 5 out of 5"></span><small>(132)</small></div>
                 <div class="product-price"><strong>Rs.299</strong><del>Rs.399</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
@@ -128,7 +127,6 @@ const html = `
                 <h3>Event T-shirt</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5" aria-label="Rated 4.5 out of 5"></span><small>(108)</small></div>
                 <div class="product-price"><strong>Rs.599</strong><del>Rs.799</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
@@ -155,7 +153,6 @@ const html = `
                 <h3>Logo Sticker Pack</h3>
                 <div class="rating"><span class="stars" style="--rating:5" aria-label="Rated 5 out of 5"></span><small>(76)</small></div>
                 <div class="product-price"><strong>Rs.149</strong><del>Rs.199</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
@@ -182,7 +179,6 @@ const html = `
                 <h3>Wooden Identity Badge</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5" aria-label="Rated 4.5 out of 5"></span><small>(63)</small></div>
                 <div class="product-price"><strong>Rs.99</strong><del>Rs.149</del><em>34% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
@@ -209,7 +205,6 @@ const html = `
                 <h3>Coffee Mug</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5" aria-label="Rated 4.5 out of 5"></span><small>(54)</small></div>
                 <div class="product-price"><strong>Rs.249</strong><del>Rs.319</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
@@ -236,7 +231,6 @@ const html = `
                 <h3>Branded Pen</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5" aria-label="Rated 4.5 out of 5"></span><small>(42)</small></div>
                 <div class="product-price"><strong>Rs.69</strong><del>Rs.99</del><em>30% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
@@ -263,7 +257,6 @@ const html = `
                 <h3>BA Notebook</h3>
                 <div class="rating"><span class="stars" style="--rating:5" aria-label="Rated 5 out of 5"></span><small>(58)</small></div>
                 <div class="product-price"><strong>Rs.199</strong><del>Rs.249</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>
@@ -290,7 +283,6 @@ const html = `
                 <h3>ID Lanyard</h3>
                 <div class="rating"><span class="stars" style="--rating:5" aria-label="Rated 5 out of 5"></span><small>(106)</small></div>
                 <div class="product-price"><strong>Rs.129</strong><del>Rs.149</del><em>15% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row">
                   <div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div>
                   <button class="cart-btn" type="button">Add to Cart</button>

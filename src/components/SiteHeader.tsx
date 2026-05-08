@@ -2,7 +2,59 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
+
+function SearchBar() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const [query, setQuery] = useState("");
+
+  useEffect(() => {
+    setQuery(searchParams.get("q") ?? "");
+  }, [searchParams, pathname]);
+
+  return (
+    <form
+      className="search-bar"
+      role="search"
+      onSubmit={(e) => {
+        e.preventDefault();
+        const q = query.trim();
+        router.push(q ? `/shop?q=${encodeURIComponent(q)}` : "/shop");
+      }}
+    >
+      <input
+        type="search"
+        placeholder="Search eco products, BA tools, accessories..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <button type="submit" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M10.5 3a7.5 7.5 0 0 1 5.9 12.1l4.2 4.2-1.4 1.4-4.2-4.2A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
+        </svg>
+      </button>
+    </form>
+  );
+}
+
+function SearchBarFallback() {
+  return (
+    <form className="search-bar" role="search">
+      <input
+        type="search"
+        placeholder="Search eco products, BA tools, accessories..."
+      />
+      <button type="submit" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M10.5 3a7.5 7.5 0 0 1 5.9 12.1l4.2 4.2-1.4 1.4-4.2-4.2A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
+        </svg>
+      </button>
+    </form>
+  );
+}
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -45,17 +97,9 @@ export default function SiteHeader() {
           />
         </Link>
 
-        <form className="search-bar" role="search">
-          <input
-            type="search"
-            placeholder="Search eco products, BA tools, accessories..."
-          />
-          <button type="submit" aria-label="Search">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M10.5 3a7.5 7.5 0 0 1 5.9 12.1l4.2 4.2-1.4 1.4-4.2-4.2A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
-            </svg>
-          </button>
-        </form>
+        <Suspense fallback={<SearchBarFallback />}>
+          <SearchBar />
+        </Suspense>
 
         <div className="header-actions">
           <Link href="/login" className="action-btn">
@@ -74,6 +118,15 @@ export default function SiteHeader() {
             </span>
             <span>Wishlist</span>
             <b>0</b>
+          </Link>
+          <Link href="/my-orders" className="action-btn">
+            <span className="action-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 11.01 19 4H5L3 11v9c0 .6.4 1 1 1h16c.6 0 1-.4 1-1v-9zM5.5 6h13l1.27 4.5H4.23L5.5 6zM5 19v-7h14v7H5zm4-4h6v2H9v-2z" />
+              </svg>
+            </span>
+            <span>My Orders</span>
+            <b id="myOrdersCount">0</b>
           </Link>
           <Link href="/cart" className="action-btn">
             <span className="action-icon">

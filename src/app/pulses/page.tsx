@@ -63,7 +63,6 @@ const html = `
                 <h3>Toor Daal 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(167)</small></div>
                 <div class="product-price"><strong>Rs.159</strong><del>Rs.199</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -77,7 +76,6 @@ const html = `
                 <h3>Moong Daal 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(134)</small></div>
                 <div class="product-price"><strong>Rs.139</strong><del>Rs.179</del><em>22% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -91,7 +89,6 @@ const html = `
                 <h3>Chana Daal 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(198)</small></div>
                 <div class="product-price"><strong>Rs.119</strong><del>Rs.149</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -105,7 +102,6 @@ const html = `
                 <h3>Rajma Kidney Beans 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(89)</small></div>
                 <div class="product-price"><strong>Rs.179</strong><del>Rs.229</del><em>22% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -119,7 +115,6 @@ const html = `
                 <h3>Black Urad Daal 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(76)</small></div>
                 <div class="product-price"><strong>Rs.169</strong><del>Rs.219</del><em>23% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -133,7 +128,6 @@ const html = `
                 <h3>Masoor Daal 1kg</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(112)</small></div>
                 <div class="product-price"><strong>Rs.129</strong><del>Rs.169</del><em>24% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>

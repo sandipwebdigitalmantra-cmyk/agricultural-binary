@@ -80,32 +80,6 @@ const html = `
                 </label>
 
                 <label class="payment-option">
-                  <input type="radio" name="payment" value="card">
-                  <span class="payment-content">
-                    <span class="payment-icon" aria-hidden="true">
-                      <svg viewBox="0 0 24 24"><path d="M3 6h18a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm0 4v2h18v-2H3z"/></svg>
-                    </span>
-                    <span class="payment-meta">
-                      <strong>Credit / Debit Card</strong>
-                      <small>Visa, Mastercard, RuPay accepted</small>
-                    </span>
-                  </span>
-                </label>
-
-                <label class="payment-option">
-                  <input type="radio" name="payment" value="netbanking">
-                  <span class="payment-content">
-                    <span class="payment-icon" aria-hidden="true">
-                      <svg viewBox="0 0 24 24"><path d="M12 2 2 7v2h20V7L12 2zM4 10v8H2v2h20v-2h-2v-8h-2v8h-3v-8h-2v8h-2v-8H9v8H6v-8H4z"/></svg>
-                    </span>
-                    <span class="payment-meta">
-                      <strong>Net Banking</strong>
-                      <small>All major Indian banks supported</small>
-                    </span>
-                  </span>
-                </label>
-
-                <label class="payment-option">
                   <input type="radio" name="payment" value="cod">
                   <span class="payment-content">
                     <span class="payment-icon" aria-hidden="true">

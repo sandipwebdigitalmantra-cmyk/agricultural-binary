@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import "./globals.css";
 import "./legacy.css";
 
@@ -7,6 +8,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import ClientScripts from "@/components/ClientScripts";
 import LinkInterceptor from "@/components/LinkInterceptor";
+import FloatingActions from "@/components/FloatingActions";
 
 export const metadata: Metadata = {
   title: "Negila Sene | Eco E-Commerce & BA Network",
@@ -26,8 +28,11 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <SiteFooter />
+        <FloatingActions />
         <LinkInterceptor />
-        <ClientScripts />
+        <Suspense fallback={null}>
+          <ClientScripts />
+        </Suspense>
       </body>
     </html>
   );

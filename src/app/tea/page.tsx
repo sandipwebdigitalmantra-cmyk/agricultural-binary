@@ -63,7 +63,6 @@ const html = `
                 <h3>Assam CTC Tea 500g</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(198)</small></div>
                 <div class="product-price"><strong>Rs.249</strong><del>Rs.299</del><em>17% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -77,7 +76,6 @@ const html = `
                 <h3>Darjeeling First Flush 250g</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(156)</small></div>
                 <div class="product-price"><strong>Rs.449</strong><del>Rs.549</del><em>18% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -91,7 +89,6 @@ const html = `
                 <h3>Masala Chai Blend 250g</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(234)</small></div>
                 <div class="product-price"><strong>Rs.199</strong><del>Rs.249</del><em>20% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -105,7 +102,6 @@ const html = `
                 <h3>Green Tea Leaves 250g</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(124)</small></div>
                 <div class="product-price"><strong>Rs.299</strong><del>Rs.379</del><em>21% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -119,7 +115,6 @@ const html = `
                 <h3>Tulsi Herbal Tea 100g</h3>
                 <div class="rating"><span class="stars" style="--rating:4.5"></span><small>(89)</small></div>
                 <div class="product-price"><strong>Rs.149</strong><del>Rs.199</del><em>25% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
@@ -133,7 +128,6 @@ const html = `
                 <h3>Nilgiri Tea 500g</h3>
                 <div class="rating"><span class="stars" style="--rating:5"></span><small>(112)</small></div>
                 <div class="product-price"><strong>Rs.329</strong><del>Rs.419</del><em>21% off</em></div>
-                <div class="pv-note">No PV | Company Sale</div>
                 <div class="cart-row"><div class="qty-control"><button type="button">-</button><input value="0" readonly><button type="button">+</button></div><button class="cart-btn" type="button">Add to Cart</button></div>
               </div>
             </article>
